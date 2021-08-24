@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://slides.com/jackjeffress/mystep-programme-jsd-class-01?token=ByFeHzmC -->
+<html class="sl-root decks show mz-history mz-svg mz-localstorage mz-csspositionsticky mz-supports mz-cssanimations mz-backgroundsize mz-no-cssgridlegacy mz-cssgrid mz-flexbox mz-csstransforms mz-csstransforms3d mz-csstransitions mz-fullscreen mz-webpanimation loaded ua-windows ua-chrome has-visible-scrollbars fonts-are-ready reveal-is-ready" data-account="" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <title>MyStep Programme: JSD Class 01</title>
+    <meta name="description" content="A presentation created with Slides.">
+    <meta name="viewport" content="initial-scale=1.0">
+
+    <meta property="og:title" content="MyStep Programme: JSD Class 01">
+    <meta property="og:description" content="A presentation created with Slides.">
+    <meta property="og:site_name" content="Slides">
+    <meta property="og:image" content="https://media.slid.es/thumbnails/31bbc13bc2b8b18bfbd89b773224c088/thumb.jpg?1628572525">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://slides.com/jackjeffress/mystep-programme-jsd-class-01?token=ByFeHzmC">
+    <meta property="fb:app_id" content="146002942236376">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="manifest" href="https://slides.com/manifest.json">
+
+    <link href="./SLIDE_CLASS_01_files/css2" rel="stylesheet" type="text/css" data-application-font="inter">
+
+    <link rel="stylesheet" media="all" href="./SLIDE_CLASS_01_files/slides-5463dbbad1a68c6e9a85872698fd43e74078271bfd42f08aadf3e7324137e99c.css">
+    <link rel="stylesheet" media="all" href="./SLIDE_CLASS_01_files/application-d765afd133c93cad8731de02dad841402fd8ee5c920bed06838eabfb070539b3.css">
+    	<link rel="stylesheet" media="all" href="./SLIDE_CLASS_01_files/deck-v2-48db2ff32fa8faa2f0d1fe3b017788bb2f1515d0f0fb07e6784e4d2abf58ffe9.css">
+
+
+
+<style id="user-css-output" type="text/css">.reveal .slides {
+  color: #16161d;
+}
+.reveal .slides h1,
+.reveal .slides h2,
+.reveal .slides h3,
+.reveal .slides h4,
+.reveal .slides h5,
+.reveal .slides h6,
+.reveal .slides ul,
+.reveal .slides ol,
+.reveal .slides li,
+.reveal .slides p,
+.reveal .slides span,
+.reveal .slides table,
+.reveal .slides blockquote {
+  font-family: "Roboto Slab";
+}
+.reveal .slides a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-skip: edges;
+}
+.reveal .slides a:hover {
+  color: inherit;
+}
+.reveal .slides,
+.reveal .slides code,
+.reveal .slides pre {
+  font-family: "IBM Plex Mono";
+}
+.reveal .slides code,
+.reveal .slides pre,
+.reveal .slides .mono,
+.reveal .slides .code,
+.reveal .slides .code-heading h1,
+.reveal .slides code *,
+.reveal .slides pre * {
+  font-family: "IBM Plex Mono", monospace !important;
+}
+</style>
+
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="UCZ/Q8fw1m482ewWjbOL5xNDNtY3gq0dludd7kfGgmilz30saOfVSh9eS0OK1DLCFR07xvur2/4szAQURggZCw==">
+    <script type="application/javascript" async="" defer="" src="./SLIDE_CLASS_01_files/track.js.download"></script><script type="text/javascript" async="" src="./SLIDE_CLASS_01_files/f7sH7NavrjjvuGxByaw.js.download"></script><script async="" src="./SLIDE_CLASS_01_files/analytics.js.download"></script><script type="text/javascript">
+  if( navigator.doNotTrack !== '1' && !/dnt=1/.test( window.location.search ) ) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39670045-1', 'auto');
+    ga('send', 'pageview');
+
+      ga('create', 'UA-51184089-2', 'auto', { 'name': 'customTracker' });
+      ga('customTracker.send', 'pageview');
+  }
+</script>
+    	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@Slides">
+	<meta name="twitter:title" content="MyStep Programme: JSD Class 01">
+	<meta name="twitter:description" content="A presentation created with Slides.">
+	<meta name="twitter:image" content="https://media.slid.es/thumbnails/31bbc13bc2b8b18bfbd89b773224c088/thumb.jpg?1628572525">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <style type="text/css"></style><link rel="stylesheet" href="./SLIDE_CLASS_01_files/montserrat.css"><link rel="stylesheet" href="./SLIDE_CLASS_01_files/opensans.css"><link rel="stylesheet" href="./SLIDE_CLASS_01_files/css"><style type="text/css" media="screen">.uv-icon{box-sizing:border-box;display:inline-block;cursor:pointer;position:relative;transition:all 300ms;width:39px;height:39px;position:fixed;z-index:100002;opacity:0.8;transition:opacity 100ms}.uv-icon.uv-bottom-right{bottom:10px;right:12px}.uv-icon.uv-top-right{top:10px;right:12px}.uv-icon.uv-bottom-left{bottom:10px;left:12px}.uv-icon.uv-top-left{top:10px;left:12px}.uv-icon.uv-is-selected{opacity:1}.uv-icon svg{width:39px;height:39px}.uv-icon .uv-tooltip-container{position:relative}.uv-icon .uv-tooltip-container .uv-icon-tooltip{display:none;position:absolute;height:20px;padding:4px 8px;background-color:#464653;color:white;font-size:12px;border-radius:4px;line-height:18px;font-family:"Open Sans", sans-serif;white-space:nowrap}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left,.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{top:0;bottom:0;margin:auto 10px}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top,.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{transform:translate(-30%);margin:10px auto}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top{bottom:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{top:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left{right:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{left:100%}.uv-icon .uv-tooltip-container:hover .uv-icon-tooltip{display:block}.uv-icon-trigger{display:block;width:39px;height:39px;border:none;padding:0;cursor:pointer;background:none}.uv-popover{font-family:sans-serif;font-weight:100;font-size:13px;color:black;position:fixed;z-index:100001}.uv-popover-content{border-radius:5px;background:white;border:1px solid transparent;position:relative;width:325px;height:325px;transition:background 200ms}.uv-bottom .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-top .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-left .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-right .uv-popover-content{box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-ie8 .uv-popover-content{position:relative}.uv-ie8 .uv-popover-content .uv-popover-content-shadow{display:block;background:black;content:'';position:absolute;left:-15px;top:-15px;width:100%;height:100%;filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=15,MakeShadow=true,ShadowOpacity=0.30);z-index:-1}.uv-popover-tail{border:9px solid transparent;width:0;z-index:10;position:absolute;transition:border-top-color 200ms}.uv-top .uv-popover-tail{bottom:-20px;border-top:11px solid white}.uv-bottom .uv-popover-tail{top:-20px;border-bottom:11px solid white}.uv-left .uv-popover-tail{right:-20px;border-left:11px solid white}.uv-right .uv-popover-tail{left:-20px;border-right:11px solid white}.uv-popover-loading{background:white;border-radius:5px;position:absolute;width:100%;height:100%;left:0;top:0}.uv-popover-loading-text{position:absolute;top:50%;margin-top:-0.5em;width:100%;text-align:center}.uv-popover-iframe-container{height:100%}.uv-popover-iframe{border-radius:5px;overflow:hidden}.uv-is-hidden{display:none}.uv-is-invisible{display:block !important;visibility:hidden !important}.uv-is-transitioning{display:block !important}.uv-no-transition{transition:none !important}.uv-fade{opacity:1;transition:opacity 200ms ease-out}.uv-fade.uv-is-hidden{opacity:0}.uv-scale-top,.uv-scale-top-left,.uv-scale-top-right,.uv-scale-bottom,.uv-scale-bottom-left,.uv-scale-bottom-right,.uv-scale-right,.uv-scale-right-top,.uv-scale-right-bottom,.uv-scale-left,.uv-scale-left-top,.uv-scale-left-bottom,.uv-slide-top,.uv-slide-bottom,.uv-slide-left,.uv-slide-right{opacity:1;transition:all 80ms ease-out}.uv-scale-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%)}.uv-scale-top-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(-10%)}.uv-scale-top-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(10%)}.uv-scale-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%)}.uv-scale-bottom-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(-10%)}.uv-scale-bottom-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(10%)}.uv-scale-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%)}.uv-scale-right-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(-10%)}.uv-scale-right-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(10%)}.uv-scale-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%)}.uv-scale-left-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(-10%)}.uv-scale-left-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(10%)}.uv-slide-top.uv-is-hidden{transform:translateY(-100%)}.uv-slide-bottom.uv-is-hidden{transform:translateY(100%)}.uv-slide-left.uv-is-hidden{transform:translateX(-100%)}.uv-slide-right.uv-is-hidden{transform:translateX(100%)}
+</style><script type="text/javascript" src="./SLIDE_CLASS_01_files/highlight-b633f6a6f8f33092c77cdeec43341175b82c93f333c1bf3d52ca8ccb5f62c727.js.download"></script><style>a, button, .sl-select, .sl-checkbox label, .radio label, .focus-outline { outline: none !important; }</style><script type="text/javascript" src="./SLIDE_CLASS_01_files/zoom-a5d62a27f9dd7ce53da982c71e540b906097da17f6aadaf4d6532ff16c39d0c4.js.download"></script><style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style></head>
+  <body data-new-gr-c-s-check-loaded="14.1026.0" data-gr-ext-installed="" style="transition: -webkit-transform 0.8s ease 0s;">
+    
+    <div id="container" class="container">
+      
+
+<header class="global-header show-on-scroll show">
+  <div class="wrapper">
+    <div class="slides-logo logo-animation open">
+      <a class="symbol" href="https://slides.com/">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+      </a>
+      <a class="word" href="https://slides.com/"></a>
+    </div>
+    <div class="nav-wrapper">
+      <ul class="nav">
+          <li class="nav-item" data-page-id="home/explore">
+            <a class="nav-item-anchor" href="https://slides.com/explore"><span class="nav-item-label wide">Made with Slides</span></a>
+          </li>
+          <li class="nav-item" data-page-id="static/pricing">
+            <a class="nav-item-anchor" href="https://slides.com/pricing?h=1"><span class="nav-item-label">Pricing</span></a>
+          </li>
+          <li class="nav-item" data-page-id="home/features">
+            <a class="nav-item-anchor" href="https://slides.com/features"><span class="nav-item-label">Features</span></a>
+          </li>
+          <li class="nav-item" data-page-id="funnels/teams">
+            <a class="nav-item-anchor" href="https://slides.com/for-teams"><span class="nav-item-label wide">Teams</span></a>
+          </li>
+          <li class="nav-item-divider"></li>
+          <li class="nav-item" data-page-id="sessions/new">
+            <a class="nav-item-anchor" href="https://slides.com/users/sign_in"><span class="nav-item-label">Log in</span></a>
+          </li>
+          <li class="nav-item nav-item-highlighted">
+            <a class="nav-item-anchor" href="https://slides.com/pricing"><span class="nav-item-label">Sign up</span></a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+      
+      <div id="main" class="main " role="main">
+        
+
+
+
+
+
+
+
+<div class="marquee">
+
+	<div class="reveal-frame">
+		<div class="reveal-viewport theme-font-montserrat theme-color-sand-blue" style="--slide-width:960px; --slide-height:700px;">
+			<div class="reveal concave embedded has-horizontal-slides has-dark-background ready focused" role="application" data-transition-speed="default" data-background-transition="fade">
+				<div class="slides" style="width: 960px; height: 700px; inset: 50% auto auto 50%; transform: translate(-50%, -50%) scale(0.64224);">
+					<section data-background-color="#3b465c" data-id="e3b2b23e3752a8534ae93ab9bbcb1524" class="has-dark-background present" style="display: block;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 106px; height: auto;" data-block-id="9d6ef8b7474de945f620b8e81a9736b7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(233, 232, 212); text-align: left; font-size: 70%;">
+<h1>Before we begin...</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-beb39f" style="height: auto; width: 74px; left: 80px; top: 210px;" data-block-id="8de51ba0345fb647efc61372ef74e1d8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(233, 232, 212); text-align: left;">
+<p>Open</p>
+</div></div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 80px; left: 80px; top: 280px;" data-block-id="9fd0f3b2e35d87e4792f4a83b599dc3a" data-name="text-c17a32"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(233, 232, 212); text-align: left;">
+<p>Zoom</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 353px; left: 527px; top: 210px;" data-block-id="cbc1535226fadd524d2a709f499d0646" data-name="text-7daa46"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(233, 232, 212); text-align: right;">
+<p><a href="https://bit.ly/jsd-class-01" target="_blank">https://bit.ly/jsd-class-01</a></p>
+</div></div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 145px; left: 735px; top: 280px;" data-block-id="032ae89295570e2d01bf68ab43eff5d3" data-name="text-148fc4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(233, 232, 212); text-align: right;">
+<p>Videos On</p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="line-982d15" data-block-id="8ffe9b17c19d7c28046efbaf824a1f51" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 190px; top: 299.5px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="515" data-line-y2="0" data-line-color="#e9e8d4" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="515" height="1" viewBox="0 0 515 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="513" y2="0"></line><line class="line-element" stroke="#e9e8d4" stroke-width="2" x1="0" y1="0" x2="513" y2="0"></line><path style="fill: rgba(0,0,0,0);" stroke="#e9e8d4" stroke-width="2" transform="translate(513,0) rotate(90)" d="M 6 6 L 0 0 L -6 6"></path></svg></div></div>
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 181.5px; top: 229.5px;" data-block-id="37da1e83782eb4ae111ae2de6a3e99cd" data-name="line-d84cf3"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="315.5" data-line-y2="0" data-line-color="#e9e8d4" data-line-start-type="none" data-line-end-type="line-arrow" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="315.5" height="1" viewBox="0 0 315.5 1"><line stroke="rgba(0,0,0,0)" stroke-width="15" x1="0" y1="0" x2="313.5" y2="0"></line><line class="line-element" stroke="#e9e8d4" stroke-width="2" x1="0" y1="0" x2="313.5" y2="0"></line><path style="fill: rgba(0,0,0,0);" stroke="#e9e8d4" stroke-width="2" transform="translate(313.5,0) rotate(90)" d="M 6 6 L 0 0 L -6 6"></path></svg></div></div></section><section data-background-color="#005397" data-id="df618ab1c8765dd8baf447c6594966e5" class="has-dark-background future" hidden="" aria-hidden="true" style="display: block;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 311px; height: auto;" data-block-id="0e24ba69aa498011e9b27d9774dfed89"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255); font-size: 80%;">
+<h1>Welcome!</h1>
+</div></div></section><section data-background-color="#167c80" data-id="6b19ead35882178b2742bf795b4a28a1" class="has-dark-background future" hidden="" aria-hidden="true" style="display: block;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 101px; height: auto;" data-block-id="d96976942a0a4b2301c0df3dad3b36f0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255); font-size: 80%; text-align: left;">
+<h1>Agenda</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-23a37f" data-block-id="04f5629ba846082e735cc70f7e5f9a31" style="height: auto; width: 821px; left: 63px; top: 210px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); text-align: left;">
+<ul>
+	<li>Review and Homework Recap</li>
+	<li>Variables</li>
+	<li>Conditionals</li>
+	<li>Loops</li>
+	<li>Maybe:
+	<ul>
+		<li>Structural Data Types</li>
+		<li>Advanced Loops</li>
+		<li>Functions</li>
+	</ul>
+	</li>
+	<li>Exit Ticket</li>
+</ul>
+</div></div></section><section data-background-color="#674b7c" data-id="791679f03c543be00a5428f11ae460bb" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 311px; height: auto;" data-block-id="36898ecee577d0dda2530c939d3a37ac"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(229, 232, 220); text-align: center; font-size: 80%;">
+<h1>Review</h1>
+</div></div>
+</section><section data-background-color="#005397" data-id="34701a3436fef8a12ae507d809696da2" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 311px; height: auto;" data-block-id="377b3ef85d0f1bb53976f3bee2914668"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255); font-size: 80%;">
+<h1>Structural Data Types</h1>
+</div></div></section><section data-id="1581fb4d8ce330b9863736df0eb4d60c" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="dc6d081b90665ee1e191eaade433f9d1"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>What are structural data types?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 63px; top: 210px; height: auto;" data-block-id="68bf5f96718ffac111ee62cf59293ca3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<ul>
+	<li>They are structures that JavaScript has to organise data</li>
+	<li>They can contain other data types (both primitive and structural data types)</li>
+	<li>They have distinguishable parts (e.g. a first item, a key etc.)</li>
+</ul>
+</div></div></section><section data-id="37da4be96e2d3e359153a2e567b1d25a" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="06eeda2222669f3b8adbaf75b26eb7cb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>What structural types do we have?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 63px; top: 210px; height: auto;" data-block-id="8fb618b8424d0565c3cc3c0a796f59a9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<ul>
+	<li>Objects
+	<ul>
+		<li>This includes: arrays, dates, maps, and sets plus a whole lot more (you can even create your own)</li>
+	</ul>
+	</li>
+	<li>Functions</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center">Arrays, Objects and Functions will be the only ones we use today</p>
+</div></div></section><section data-id="6acbcb136d0a64835cb5c187e1935cba" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="ebf8aba7b450dfcdbab0a8d9b14f2338"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Our First Type Structural Data Types</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 210px; height: auto;" data-block-id="1e0663b03ba6b8de677a26dd704ce1ee"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<p>In JavaScript, when people think of structural data types, two main ones come to mind.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-d9522e" style="width: 800px; height: auto; left: 80px; top: 424px;" data-block-id="2c5699521e025988bb6f72afaac4bf03"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 12;" data-code-autoheight="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code class="hljs"><span class="hljs-keyword">const</span> myArray = [ <span class="hljs-string">"A"</span>, <span class="hljs-string">"B"</span>, <span class="hljs-string">"C"</span> ];
+
+<span class="hljs-keyword">const</span> myObject = {
+  firstKey: <span class="hljs-string">"firstValue"</span>,
+  secondKey: <span class="hljs-string">"secondValue"</span>
+};</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-48f80e" data-block-id="3f0cee3bc78468d7c7756f93452fdb10" style="height: auto; width: 800px; left: 80px; top: 308px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p style="color:rgb(22, 22, 29); text-align:left"><u><strong>Arrays</strong></u>: Ordered data, that you access with an <strong><em>index</em></strong></p>
+
+<p style="color:rgb(22, 22, 29); text-align:left"><u><strong>Objects</strong></u>: Unordered data that you access with a <strong><em>key</em></strong></p>
+</div></div></section><section data-background-color="#005397" data-id="e9d40cfa9b57ef6a0f599ca68ce0f7ff" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 311px; height: auto;" data-block-id="4ce00e9357bb44bedae04c9835c41687"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255); font-size: 80%;">
+<h1>Arrays</h1>
+</div></div></section><section data-id="f84b3ecebff3d33021ab033f93edd95e" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="8b2347fe1279aafdcab688a08a631f1c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>What are arrays?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 63px; top: 210px; height: auto;" data-block-id="56b4e3ad9942f2575920b2130709a125"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<ul>
+	<li>They are lists that can be filled with any data type
+	<ul>
+		<li>Both primitive and structural</li>
+	</ul>
+	</li>
+	<li>They are ordered and you access data with an index
+	<ul>
+		<li>An index is a zero-based number (meaning the first item is index 0, the second item is index 1 and so on)</li>
+	</ul>
+	</li>
+	<li>They are able to be iterated through (meaning loops through)</li>
+</ul>
+</div></div></section><section data-id="f54107e79068bad57c8585cce1683984" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="3f403c54ffced6f3bf12a4d9c174cbfd"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Creating Arrays</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="1fb5433965d2acb7f48e856223dd2e14"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> emptyArray = [];
+
+<span class="hljs-keyword">const</span> randomNumbers = [ <span class="hljs-number">12</span>, <span class="hljs-number">42</span>, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">92</span> ];
+
+<span class="hljs-keyword">const</span> dataTypes = [ <span class="hljs-literal">true</span>, <span class="hljs-literal">null</span>, <span class="hljs-number">14</span>, <span class="hljs-string">"string"</span> ];
+
+<span class="hljs-keyword">const</span> weirdInstruments = [
+  <span class="hljs-string">"The Great Stalacpipe Organ"</span>,
+  <span class="hljs-string">"Stylophone"</span>,
+  <span class="hljs-string">"Ondes Martenot"</span>,
+  <span class="hljs-string">"Sharpischord"</span>,
+  <span class="hljs-string">"Hydraulophone"</span>,
+  <span class="hljs-string">"Pyrophone"</span>
+];</code></pre></div></div></section><section data-id="2922079ea86338a5d74a169d8f776553" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="2398228680abcbe864bca0235bbf38b9"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Accessing Elements</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="eba7db04e6a5e1432b85e9e803d1ce9f"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> letters = [
+  <span class="hljs-string">"A"</span>,
+  <span class="hljs-string">"B"</span>,
+  <span class="hljs-string">"C"</span>
+];
+
+letters[<span class="hljs-number">0</span>]; <span class="hljs-comment">// "A"</span>
+letters[<span class="hljs-number">1</span>]; <span class="hljs-comment">// "B"</span>
+letters[<span class="hljs-number">2</span>]; <span class="hljs-comment">// "C"</span>
+letters[<span class="hljs-number">3</span>]; <span class="hljs-comment">// undefined</span></code></pre></div></div></section><section data-id="a289c310cecbc2210356bdede2366c94" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="6ece5556931be6082d439f94aefd1904"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Reassigning Elements</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="4e6c583a56edd74ea537df7142ca5162"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> instruments = [
+  <span class="hljs-string">"The Great Stalacpipe Organ"</span>,
+  <span class="hljs-string">"Stylophone"</span>,
+  <span class="hljs-string">"Ondes Martenot"</span>,
+  <span class="hljs-string">"Sharpischord"</span>,
+  <span class="hljs-string">"Hydraulophone"</span>,
+  <span class="hljs-string">"Pyrophone"</span>
+];
+
+weirdInstruments[<span class="hljs-number">0</span>] = <span class="hljs-string">"Roli Seaboard"</span>;
+weirdInstruments[<span class="hljs-number">3</span>] = <span class="hljs-string">"Makey Makey Banana Piano"</span>;
+weirdInstruments[ weirdInstruments.length - <span class="hljs-number">1</span> ] = <span class="hljs-string">"OP1"</span>;</code></pre></div></div></section><section data-id="1efd3044e803b5ed5ed7ba8729c674fb" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="cd8533e7d3294cf914c79d6d073b1019"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Getting the length</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="2d58c7e8f9e6e1acd86c2a1e1456bf22"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> instruments = [
+  <span class="hljs-string">"The Great Stalacpipe Organ"</span>,
+  <span class="hljs-string">"Stylophone"</span>,
+  <span class="hljs-string">"Ondes Martenot"</span>,
+  <span class="hljs-string">"Sharpischord"</span>,
+  <span class="hljs-string">"Hydraulophone"</span>,
+  <span class="hljs-string">"Pyrophone"</span>
+];
+
+instruments.length; <span class="hljs-comment">// 6</span>
+instruments[ instruments.length - <span class="hljs-number">1</span> ]; <span class="hljs-comment">// "Pyrophone"</span></code></pre></div></div></section><section data-id="5c2789c5af822557ad412cdd1b9f66fd" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="2e04d19f1a0531fa0d34845bbb9a37aa"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Looping through Arrays</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="d55f0868ebb2f82bd4207ade82eedcd5"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> ordinals = [
+  <span class="hljs-string">"Zeroeth"</span>,
+  <span class="hljs-string">"First"</span>,
+  <span class="hljs-string">"Second"</span>,
+  <span class="hljs-string">"Third"</span>
+];
+
+ordinals[<span class="hljs-number">0</span>]; <span class="hljs-comment">// "Zeroeth"</span>
+ordinals[<span class="hljs-number">1</span>]; <span class="hljs-comment">// "First"</span>
+ordinals[<span class="hljs-number">2</span>]; <span class="hljs-comment">// "Second"</span>
+ordinals[<span class="hljs-number">3</span>]; <span class="hljs-comment">// "Third"</span>
+
+<span class="hljs-comment">// Fair bit of consistency there</span>
+<span class="hljs-comment">//   We could generate these indexes using a loop!</span></code></pre></div></div></section><section data-id="10151b06ef18503dd25903af92135697" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="d570aeedd9da4622555db248eb3b2c86"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Looping through Arrays</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="14a1533e821067a3dcdd2642df7bd6bf"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> ordinals = [
+  <span class="hljs-string">"Zeroeth"</span>,
+  <span class="hljs-string">"First"</span>,
+  <span class="hljs-string">"Second"</span>,
+  <span class="hljs-string">"Third"</span>
+];</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-707bc1" data-block-id="2373d1f4dca355f9578fa511eb18079d" style="height: auto; width: 800px; left: 80px; top: 424px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align:left">If we were to loop through this array, what would our:</p>
+
+<ul>
+	<li style="color:rgb(22, 22, 29)">Starting number be?</li>
+	<li style="color:rgb(22, 22, 29)">Ending condition be?</li>
+	<li style="color:rgb(22, 22, 29)">Step be?</li>
+</ul>
+</div></div></section><section data-id="24e5c4035ed1fce1beddbc351312c11a" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="9904ddcf97b5140a95e2287e928d6aa1"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Looping through Arrays</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="b7932460f430cf172ce054ff1527e4df"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> ordinals = [
+  <span class="hljs-string">"Zeroeth"</span>,
+  <span class="hljs-string">"First"</span>,
+  <span class="hljs-string">"Second"</span>,
+  <span class="hljs-string">"Third"</span>
+];
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span>; index &lt;= <span class="hljs-number">3</span>; index += <span class="hljs-number">1</span>) {
+  <span class="hljs-keyword">let</span> currentElement = ordinals[index];
+  <span class="hljs-built_in">console</span>.log(currentElement);
+}</code></pre></div></div></section><section data-id="f8be2d815db20f073987406be3db3dae" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="1251e4e478e49de52227f5802233a3a2"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Looping through Arrays</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="7aeafa7258c100582650b4649f930bb0"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> ordinals = [
+  <span class="hljs-string">"Zeroeth"</span>,
+  <span class="hljs-string">"First"</span>,
+  <span class="hljs-string">"Second"</span>,
+  <span class="hljs-string">"Third"</span>,
+  <span class="hljs-string">"Fourth"</span>
+];
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> index = <span class="hljs-number">0</span>; index &lt; ordinals.length; index += <span class="hljs-number">1</span>) {
+  <span class="hljs-keyword">let</span> currentElement = ordinals[index];
+  <span class="hljs-built_in">console</span>.log(currentElement);
+}</code></pre></div></div></section><section data-id="f7c5bb4229cc76835a2b84c2b8aecc73" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="b0ad0afab1f42517dadfbc908ac17d41"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Properties &amp; Methods</a></h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="81961a85c8c221e9cdedc71af4d443d3"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> ordinals = [
+  <span class="hljs-string">"First"</span>,
+  <span class="hljs-string">"Second"</span>,
+  <span class="hljs-string">"Third"</span>
+];
+
+ordinals.length; <span class="hljs-comment">// 3</span>
+
+ordinals.push(<span class="hljs-string">"Fourth"</span>); <span class="hljs-comment">// Add "Fourth" to the end</span>
+ordinals.pop(); <span class="hljs-comment">// Remove the last element ("Fourth")</span>
+
+ordinals.unshift(<span class="hljs-string">"Zeroeth"</span>); <span class="hljs-comment">// Add "Zeroeth" to the start</span>
+ordinals.shift(); <span class="hljs-comment">// Remove the first element ("Zeroeth")</span>
+
+ordinals.indexOf(<span class="hljs-string">"Second"</span>); <span class="hljs-comment">// 1</span></code></pre></div></div></section><section data-background-color="#167c80" data-auto-animate="" data-id="d5578080ce0c48f8d3af02e30a0a094e" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 301px; height: auto;" data-name="text-b4027f" data-block-id="1546c611477ab769c1c928b3f990b6b7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%; color: rgb(255, 255, 255);">
+<h2 style="text-align:center">Do the exercises <a href="https://github.com/ga-wolf/akademiga-jsd/blob/main/class_01/in-class-exercises/00_arrays.md" target="_blank">here</a>, please!</h2>
+</div></div>
+
+
+<div class="sl-block" data-block-type="shape" data-name="shape-35f37f" style="width: 109.566px; height: 50.5px; left: 774.308px; top: 68.125px;" data-block-id="0906040ae01414b49cef28634f3cc6af"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 11;" data-shape-corner-radius="10px" data-shape-stroke-color="#ffffff" data-shape-stroke-width="5px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 110 51"><defs><clippath id="shape-mask-3-1628126668344"><rect width="109.566" height="50.5" rx="10" ry="10" fill="rgba(0, 0, 0, 0)" stroke="#ffffff" stroke-width="10"></rect></clippath></defs><rect width="109.566" height="50.5" rx="10" ry="10" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#ffffff" stroke-width="10" clip-path="url(#shape-mask-3-1628126668344)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-ebaba4" style="height: auto; width: 109.566px; left: 774.308px; top: 73.875px;" data-block-id="749433c06f4dbdd89b45572ab1072712"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);">
+<p>SOLO!</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-8220a2" style="height: auto; width: 600px; left: 180px; top: 360px;" data-block-id="00bfcbfa13cb003a4aa6c9fd6ee62b63"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255);">
+<p>See you in 10 minutes!</p>
+</div></div></section><section data-background-color="#005397" data-id="6f04bc5628bffbae35728500b0dd33a0" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 311px; height: auto;" data-block-id="c46d28d859b2586e1d64b250ba487dba"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255); font-size: 80%;">
+<h1>Objects</h1>
+</div></div></section><section data-id="df58a4fc370cb0a1885165d388bcdb07" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="d5a2ffdf00c16f2543b5e102bfe6a2c1"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>What are objects?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 63px; top: 210px; height: auto;" data-block-id="db78d32cb55468e4ea18981615471778"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<ul>
+	<li>Objects are a collection of key-value pairs (like a word and a definition in a dictionary)
+	<ul>
+		<li>They are unordered!</li>
+	</ul>
+	</li>
+	<li>They, like arrays, can store any combination of data types</li>
+</ul>
+</div></div></section><section data-id="87f948fb68b00e60d06de8896ac68770" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="d354e35aca6b15873833e42a9225d0bc"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Why use objects?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 63px; top: 210px; height: auto;" data-block-id="b89b51c7eb0bd056481dfd451d6b6fc8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<ul>
+	<li>They allow us to effectively interact with large amounts of data</li>
+	<li>They allow for encapsulation and modularity:
+	<ul>
+		<li>It is a way to group functionality and data</li>
+		<li>It makes sharing your code a lot easier</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-id="c9a38fb55a52a7c14da3b7ed2261b047" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="aa2c5834d6527f97057cabef78b73d30"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Creating Objects</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="544288556c782c7888a3495a264780be"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> emptyObject = {};
+
+<span class="hljs-keyword">const</span> movie = {
+  name: <span class="hljs-string">"Satantango"</span>,
+  director: <span class="hljs-string">"Bela Tarr"</span>,
+  duration: <span class="hljs-number">432</span>
+};</code></pre></div></div></section><section data-id="689211796ed10a9792cfaca9d7f65593" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="f03776a8a737496ff836b3fe944a872d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Creating Objects</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="3d600ac01238b9ee6ef6cd4de3d5aadd"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> bookSeries = {
+  name: <span class="hljs-string">"In Search of Lost Time"</span>,
+  author: <span class="hljs-string">"Marcel Proust"</span>,
+  rating: <span class="hljs-number">5</span>,
+  books: [
+    <span class="hljs-string">"Swann's Way"</span>,
+    <span class="hljs-string">"In the Shadow of Young Girls in Flower"</span>,
+    <span class="hljs-string">"The Guermantes Way"</span>,
+    <span class="hljs-string">"Sodom and Gomorrah"</span>,
+    <span class="hljs-string">"The Prisoner"</span>,
+    <span class="hljs-string">"The Fugitive"</span>,
+    <span class="hljs-string">"Time Regained"</span>
+  ]
+};</code></pre></div></div></section><section data-id="8a8ed63435208cd2fecc7266fc54df2f" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="f08fb6eceac1dab74dee15b9a30f3cd1"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Accessing Values</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="711c91ba94e1987626b29b29e4e2a228"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> bookSeries = {
+  name: <span class="hljs-string">"In Search of Lost Time"</span>,
+  author: <span class="hljs-string">"Marcel Proust"</span>,
+  rating: <span class="hljs-number">5</span>,
+  books: [
+    <span class="hljs-string">"Swann's Way"</span>,
+  ]
+};
+
+<span class="hljs-keyword">const</span> name = bookSeries.name; <span class="hljs-comment">// "In Search of Lost Time"</span>
+<span class="hljs-keyword">const</span> author = bookSeries.author; <span class="hljs-comment">// "Marcel Proust"</span>
+<span class="hljs-keyword">const</span> rating = bookSeries.rating; <span class="hljs-comment">// 5</span>
+
+<span class="hljs-keyword">const</span> firstBook = bookSeries.books[<span class="hljs-number">0</span>]; <span class="hljs-comment">// "Swann's Way"</span></code></pre></div></div></section><section data-id="60a9ccc9ad1745b69e559f9e86e10c93" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="9f87eb9e857059c7c679243f2f940d56"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Changing Values</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="e097a1b01fe74d4311b71f3b69954c24"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> movie = {
+  name: <span class="hljs-string">"Satantango"</span>,
+  director: <span class="hljs-string">"Bela Tarr"</span>,
+  duration: <span class="hljs-number">432</span>
+};
+
+movie.name = <span class="hljs-string">"Sátántangó"</span>;
+movie.director = <span class="hljs-string">"Béla Tarr"</span>;
+movie.duration = <span class="hljs-number">534</span>;</code></pre></div></div></section><section data-id="71caa7a1d8e84774594d85934a345605" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="ce51f36e21468bc3fbdaa91281ae1417"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Adding new Values</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="cd736e45563f584e2ed1373595d2d5f8"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> movie = {
+  name: <span class="hljs-string">"Satantango"</span>,
+  director: <span class="hljs-string">"Bela Tarr"</span>,
+  duration: <span class="hljs-number">432</span>
+};
+
+movie.language = <span class="hljs-string">"Hungarian"</span>;
+movie.ratingOutOfFive = <span class="hljs-number">10</span>;
+movie.parts = <span class="hljs-number">12</span>;</code></pre></div></div></section><section data-id="2f54bfbd61d4d6e301bb776e24651767" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="64b3375239aeb04f3e6b115e724e5445"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Nested Objects</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="5feb60df9991e724d9d6ad6cec247a17"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> explorer = {
+  firstName: <span class="hljs-string">"Jacques"</span>,
+  lastName: <span class="hljs-string">"Cousteau"</span>,
+  birth: {
+    day: <span class="hljs-number">11</span>,
+    month: <span class="hljs-number">6</span>,
+    year: <span class="hljs-number">1910</span>
+  }
+};
+
+<span class="hljs-keyword">const</span> birthDay = explorer.birth.day;
+<span class="hljs-keyword">const</span> birthMonth = explorer.birth.month;
+<span class="hljs-keyword">const</span> birthYear = explorer.birth.year;</code></pre></div></div></section><section data-id="9d00c7e2a96f2db23ead7a9f62bfc8af" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="1fb72402f15a56d56b702a1053d355ff"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Complex Data Structures</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="985fb3394f4468b4914954334ffb5df3"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> marxFamily = [
+  { name: <span class="hljs-string">"Groucho"</span>, birthYear: <span class="hljs-number">1890</span> },
+  { name: <span class="hljs-string">"Harpo"</span>, birthYear: <span class="hljs-number">1888</span> },
+  { name: <span class="hljs-string">"Chico"</span>, birthYear: <span class="hljs-number">1887</span> },
+  { name: <span class="hljs-string">"Zeppo"</span>, birthYear: <span class="hljs-number">1901</span> },
+  { name: <span class="hljs-string">"Gummo"</span>, birthYear: <span class="hljs-number">1893</span> }
+];
+
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">const</span> i = <span class="hljs-number">0</span>; i &lt; marxFamily.length; i += <span class="hljs-number">1</span> ) {
+  <span class="hljs-keyword">const</span> brother = marxFamily[i];
+  <span class="hljs-built_in">console</span>.log(brother.name, brother.birthYear);
+}</code></pre></div></div></section><section data-background-color="#167c80" data-auto-animate="" data-id="4d95e045b71a5dc2a0a578dfe4ee2f3b" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 301px; height: auto;" data-name="text-b4027f" data-block-id="d24c94f75d1c1a7071bd6442249c789f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%; color: rgb(255, 255, 255);">
+<h2 style="text-align:center">Do the exercises <a href="https://github.com/ga-wolf/akademiga-jsd/blob/main/class_01/in-class-exercises/01_objects.md" target="_blank">here</a>, please!</h2>
+</div></div>
+
+
+<div class="sl-block" data-block-type="shape" data-name="shape-35f37f" style="width: 109.566px; height: 50.5px; left: 774.308px; top: 68.125px;" data-block-id="cc9e1e950ef44368eb8bd853caacbaf6"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 11;" data-shape-corner-radius="10px" data-shape-stroke-color="#ffffff" data-shape-stroke-width="5px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 110 51"><defs><clippath id="shape-mask-1-1628645074564"><rect width="109.566" height="50.5" rx="10" ry="10" fill="rgba(0, 0, 0, 0)" stroke="#ffffff" stroke-width="10"></rect></clippath></defs><rect width="109.566" height="50.5" rx="10" ry="10" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#ffffff" stroke-width="10" clip-path="url(#shape-mask-1-1628645074564)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-ebaba4" style="height: auto; width: 109.566px; left: 774.308px; top: 73.875px;" data-block-id="d66d7c2c24d10725c460e69ba62e235c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);">
+<p>SOLO!</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-8220a2" style="height: auto; width: 600px; left: 180px; top: 360px;" data-block-id="70f699b5ee990b70ecaec6f376582420"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255);">
+<p>See you in 10 minutes!</p>
+</div></div></section><section data-background-color="#005397" data-id="a58c9ec0f59f7ba44561a162cdedb170" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 311px; height: auto;" data-block-id="45b6b02ff5376953442d50a544138837"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255); font-size: 80%;">
+<h1>Functions</h1>
+</div></div></section><section data-id="fe9b3a1a439efa23a17b259048e692d6" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="2f99babf41b405df0fdf7777a3f8d3df"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>What are functions?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 210px; height: auto;" data-block-id="d203e1d86293b51bd4da929dd454e0ad"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<p style="color:rgb(22, 22, 29)">The main building blocks of programs - they are reusable sections of code (almost like subprograms).</p>
+
+<p style="color:rgb(22, 22, 29)">They are very useful for when we need to perform a single action in many places of the script, and for reducing repetition.</p>
+</div></div></section><section data-id="b175394a717962260a22a0fd64c01c39" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="1ffa41c1ee99894138946d8f98ce9246"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>What are functions?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 210px; height: auto;" data-block-id="2115e49f17350540afb1284d4f0bb89e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<p>Creating new words is normally bad practice, though fun. It is essential in programming!</p>
+
+<p>We give a name to a part of our program, and in doing so, we make it flexible, reusable and more readable.</p>
+
+<p>Functions are also the way we execute code based on events (e.g. clicking, scrolling, time etc.)</p>
+</div></div></section><section data-id="615d439d43bbc6ebb7e78b8bddcbdf15" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="bc99839e657e34f9b2f454d280e6dbc8"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>How do they work?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 63px; top: 210px; height: auto;" data-block-id="9bbcb801e46381c09e57f3d44e2b9b67"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<ul>
+	<li>We <strong>define</strong> a function</li>
+	<li>We <strong>call</strong> (or <strong>execute</strong>) it when we want the code within the function to run&nbsp;</li>
+</ul>
+</div></div></section><section data-id="1439aa80c24951c5bdf8c7e8d25f7d56" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="62e4aa9fb99223256a0b21a5168213a5"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>What can functions do?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 63px; top: 210px; height: auto;" data-block-id="3d489b4612ef694f3d1f4468c34dec30"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<ul>
+	<li>Calculations</li>
+	<li>Animations</li>
+	<li>Change CSS</li>
+	<li>Change, add or delete elements on the page</li>
+	<li>Speak to a server (e.g. an API)</li>
+	<li><strong>Anything!</strong></li>
+</ul>
+</div></div></section><section data-id="fbf352dfd3018b525885fe8127c65256" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="575e8bdf3790e5edff6ad04ce2c6a22a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Declaring Functions</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="be0bef5daee5c486bb13bc1c1d437063"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-comment">// Function Declaration</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello"</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-number">2</span> + <span class="hljs-number">2</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">subtract</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-number">10</span> - <span class="hljs-number">3</span>);
+}</code></pre></div></div></section><section data-id="f276e882cb2693c9221afa167cf24319" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="1e84838c568d9e9c814d03203d6bd59e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Declaring Functions</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="dacda895f869470e9e3bd50abfea72e2"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-comment">// You will also see these two variations!</span>
+
+<span class="hljs-comment">// Function Expression</span>
+<span class="hljs-keyword">const</span> speak = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello"</span>);
+}
+
+<span class="hljs-comment">// Arrow Function</span>
+<span class="hljs-keyword">const</span> add = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-number">2</span> + <span class="hljs-number">2</span>);
+};</code></pre></div></div></section><section data-id="880717668eb55ca83576cf55b185fe62" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="2f464b2acf06896372aaf90e13d03224"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Calling Functions</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="ba7c8c653248b54974096aa69d55dfb0"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-comment">// Function Declaration</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello"</span>);
+}
+
+<span class="hljs-comment">// Function Call Site</span>
+
+sayHello();
+</code></pre></div></div></section><section data-id="d318ef3f371515ac892ffce68f67dd08" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="9805ab7a36115282402c1cd7fe62b8cc"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Parameters and Arguments</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 210px; height: auto;" data-block-id="051e97719c2f8da6ff23e2b99554c15c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<p>Our functions aren't dynamic just yet. This is where we need to see <em><strong>parameters</strong></em> and <em><strong>arguments</strong></em>.</p>
+
+<p>They are how we provide a function with extra data or information.</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align: center;">We listen for <em><strong>parameters</strong></em> in the function declaration.</p>
+
+<p style="text-align: center;">We provide <em><strong>arguments</strong></em> at the call site.</p>
+</div></div></section><section data-id="f7e8ec1ad9bb4a5ad3adb353514456f9" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="e58ec73d3607db8a7d6904a0ef762ac9"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Parameters and Arguments</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="01db566f17ead47b38bdb3da3cf52d09"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-comment">// `name` is our parameter</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params">name</span>) </span>{
+  <span class="hljs-keyword">const</span> greeting = <span class="hljs-string">"Hello "</span> + name;
+  <span class="hljs-built_in">console</span>.log(greeting);
+}
+
+<span class="hljs-comment">// "Jacques" is our argument</span>
+
+sayHello(<span class="hljs-string">"Jacques"</span>);</code></pre></div></div></section><section data-id="7bf50707c0d18789c0087d7b42dbddbf" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="ce5575dfa9d9cbb65ba2888bdba8f98b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;">
+<h2>Parameters and Arguments</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="632b0c7d7a8876afbafbc680ab5cf3e9"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">numOne, numTwo</span>) </span>{
+  <span class="hljs-keyword">const</span> solution = numOne + numTwo;
+  <span class="hljs-built_in">console</span>.log(solution);
+}
+
+add(<span class="hljs-number">5</span>, <span class="hljs-number">10</span>); <span class="hljs-comment">// numOne will be set to 5, numTwo will be set to 10</span>
+
+add(<span class="hljs-number">3</span>, <span class="hljs-number">18</span>); <span class="hljs-comment">// numOne will be set to 3, numTwo will be set to 18</span></code></pre></div></div></section><section data-id="86f2caf4f23e83d6b4eb001127ceae5e" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="0211222059c5332915a9ada7f81580c8"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;" data-has-custom-html="">
+<h2>
+<span class="code">return</span> Values</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 210px; height: auto;" data-block-id="4ceb0ca9f4dcbf8999d3a2d9319f8be8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;" data-has-custom-html="">
+<p>Sometimes your function calculates something and you want the result!</p>
+
+<p><span class="mono">return</span> values allow us to do that.</p>
+
+<p>We can store the results of calculation through the use of <span class="mono">return</span> values (think of <span class="mono">.toUpperCase();</span>);</p>
+</div></div></section><section data-id="f76fe2633a7a80b4d598301b56925d8e" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="3786182748609bc5103fe913a64f8148"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;" data-has-custom-html="">
+<h2>
+<span class="code">return</span> Values</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 80px; top: 210px;" data-block-id="5641ba71dc6c6418543d5c6730b0309e"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">squareNumber</span>(<span class="hljs-params">num</span>) </span>{
+  <span class="hljs-keyword">const</span> square = num * num;
+  <span class="hljs-keyword">return</span> square;
+}
+
+<span class="hljs-keyword">const</span> squareOfFour = squareNumber(<span class="hljs-number">4</span>);
+
+<span class="hljs-built_in">console</span>.log(squareOfFour); <span class="hljs-comment">// 16</span></code></pre></div></div></section><section data-id="42f57c623f31664892e7e71054bc102f" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="f05fd2a349ea1b0014e538b63872309e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;" data-has-custom-html="">
+<h2>
+<span class="code">return</span> Values</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 81px; top: 210px;" data-block-id="2b4c0c5d9e9615be0692051584fbcc7d"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">squareNumber</span>(<span class="hljs-params">num</span>) </span>{
+  <span class="hljs-keyword">const</span> square = num * num;
+  <span class="hljs-keyword">return</span> square;
+}
+
+<span class="hljs-keyword">const</span> squareOfFour = squareNumber(<span class="hljs-number">4</span>);
+<span class="hljs-keyword">const</span> squareOfTwelve = squareNumber(<span class="hljs-number">12</span>);
+
+<span class="hljs-built_in">console</span>.log(squareOfFour + squareOfTwelve); <span class="hljs-comment">// 160</span>
+
+<span class="hljs-built_in">console</span>.log(
+  squareNumber(<span class="hljs-number">8</span>) + squareNumber(<span class="hljs-number">11</span>)
+); <span class="hljs-comment">// 185</span></code></pre></div></div></section><section data-id="fb968b11f94cbb75ffbdd374c96aa656" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="73ddc21abe9315dc899e883a618b1ca1"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;" data-has-custom-html="">
+<h2>
+<span class="code">return</span> Values</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 81px; top: 210px;" data-block-id="7bcc089e78e8f8f562c6ae6cf94341e9"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">cube</span>(<span class="hljs-params">num</span>) </span>{
+  <span class="hljs-keyword">return</span> num * num * num;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">double</span>(<span class="hljs-params">num</span>) </span>{
+  <span class="hljs-keyword">return</span> num * <span class="hljs-number">2</span>;
+}
+
+<span class="hljs-keyword">const</span> result = double(cube(<span class="hljs-number">4</span>)); <span class="hljs-comment">// 128</span></code></pre></div></div></section><section data-id="4c656006897e51918135f2d8a5ab9bea" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="fdeca3373faa870f5ee275b5a5cc1519"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;" data-has-custom-html="">
+<h2>
+<span class="code">return</span> Values</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 81px; top: 210px;" data-block-id="455fa6940604834317b18aaec962b7e5"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-keyword">const</span> userOne = { 
+  admin: <span class="hljs-literal">true</span> 
+};
+
+<span class="hljs-keyword">const</span> userTwo = { 
+  admin: <span class="hljs-literal">false</span> 
+};
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isAdmin</span>(<span class="hljs-params">user</span>) </span>{
+  <span class="hljs-keyword">return</span> user.admin === <span class="hljs-literal">true</span>;
+}
+
+isAdmin(userOne); <span class="hljs-comment">// true</span>
+
+isAdmin(userTwo); <span class="hljs-comment">// false</span></code></pre></div></div></section><section data-id="4f57d345a6c65cfc37f0df1b9ece29b9" hidden="" aria-hidden="true" class="future" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 110.5px; height: auto;" data-block-id="d6094c44c30d70ad03d103b4f3787c1d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%;" data-has-custom-html="">
+<h2>Passing in Variables</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="code-92384f" style="width: 800px; height: auto; left: 81px; top: 210px;" data-block-id="e97a50ebad1bcc74d69a536a4d833233"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="osx" style="z-index: 11;" data-code-autoheight="true" data-code-wrap="true"><pre style="font-size: 18px; line-height: 22px;" class="typescript"><code style="padding: 10px;" class="hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addTwoNumbers</span>(<span class="hljs-params">x, y</span>) </span>{
+  <span class="hljs-keyword">return</span> x + y;
+}
+
+<span class="hljs-keyword">const</span> firstNumber = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">const</span> secondNumber = <span class="hljs-number">24</span>;
+
+addTwoNumbers(firstNumber, secondNumber); <span class="hljs-comment">// 34</span></code></pre></div></div></section><section data-background-color="#00b28b" data-id="4223c251d13fd83f9d97551fd46d3e77" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 101px; height: auto;" data-block-id="ad0f7a6fa058dff646339abc7a1d48f8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255); text-align: left; font-size: 80%;">
+<h1>Function Guidelines</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-beb39f" style="height: auto; width: 800px; left: 80px; top: 210px;" data-block-id="59065de897d789508b7c4c0805e5dd4b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); text-align: left;">
+<p>Follow F.I.R.S.T principles:</p>
+
+<ul>
+	<li>
+<strong><u>F</u></strong>ocussed</li>
+	<li>
+<u><strong>I</strong></u>ndependent</li>
+	<li>
+<u><strong>R</strong></u>eusable</li>
+	<li>
+<u><strong>S</strong></u>mall</li>
+	<li>
+<u><strong>T</strong></u>estable</li>
+</ul>
+
+<p>*Also, make it fault-tolerant. But that isn't in the acronym</p>
+</div></div></section><section data-background-color="#167c80" data-auto-animate="" data-id="6d8d2e0d1b0706913db4a2712168c71b" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 301px; height: auto;" data-name="text-b4027f" data-block-id="c2ce0e87944e7544c896c6977e2f0568"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10; font-size: 80%; color: rgb(255, 255, 255);">
+<h2 style="text-align:center">Do the exercises <a href="https://github.com/ga-wolf/akademiga-jsd/blob/main/class_01/in-class-exercises/02_functions.md" target="_blank">here</a>, please!</h2>
+</div></div>
+
+
+<div class="sl-block" data-block-type="shape" data-name="shape-35f37f" style="width: 109.566px; height: 50.5px; left: 774.308px; top: 68.125px;" data-block-id="9b42e31692ee22d1feff82c2ee2d3483"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 11;" data-shape-corner-radius="10px" data-shape-stroke-color="#ffffff" data-shape-stroke-width="5px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 110 51"><defs><clippath id="shape-mask-2-1628645093664"><rect width="109.566" height="50.5" rx="10" ry="10" fill="rgba(0, 0, 0, 0)" stroke="#ffffff" stroke-width="10"></rect></clippath></defs><rect width="109.566" height="50.5" rx="10" ry="10" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#ffffff" stroke-width="10" clip-path="url(#shape-mask-2-1628645093664)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-ebaba4" style="height: auto; width: 109.566px; left: 774.308px; top: 73.875px;" data-block-id="a12f6dab30d5effa426f2af42443a632"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);">
+<p>SOLO!</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-8220a2" style="height: auto; width: 600px; left: 180px; top: 360px;" data-block-id="774ff85fe6b3d73ab0a80f478b1d42df"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255);">
+<p>See you in 10 minutes!</p>
+</div></div></section><section data-background-color="#005397" data-id="8fbfe9f67bcd1dfe4cbc6cd4799d3891" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 311px; height: auto;" data-block-id="74e6d687f020399bedcf2f2791fd00b8"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255); font-size: 80%;">
+<h1>That's all!</h1>
+</div></div></section><section data-background-color="#167c80" data-id="6e394534ace9a477158608878bf462b0" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 101px; height: auto;" data-block-id="0ce047d442543f9b6cb85190ca922b27"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255); text-align: left; font-size: 80%;">
+<h1>Homework</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-beb39f" style="height: auto; width: 800px; left: 63.3848px; top: 210px;" data-block-id="ae662e7239b34f7e86d052d280693899"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); text-align: left;">
+<ul>
+	<li>Finish off in-class exercises</li>
+	<li><a href="https://github.com/ga-wolf/akademiga-jsd/blob/main/class_01/in-class-exercises/00_arrays.md" target="_blank">Arrays</a></li>
+	<li><a href="https://github.com/ga-wolf/akademiga-jsd/blob/main/class_01/in-class-exercises/01_objects.md" target="_blank">Objects</a></li>
+	<li>
+<a href="https://github.com/ga-wolf/akademiga-jsd/blob/main/class_01/in-class-exercises/02_functions.md" target="_blank">Functions</a>&nbsp;</li>
+	<li>Extra: Begin reviewing the next lesson's content</li>
+</ul>
+</div></div></section><section data-background-color="#674b7c" data-id="c73deb3ca738e1746154a5eeffb73de8" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 101px; height: auto;" data-block-id="34bb93072e84f14e9545eb2e4175fd5a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(229, 232, 220); text-align: left; font-size: 80%;">
+<h1>What's next?</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-beb39f" style="height: auto; width: 800px; left: 65px; top: 210px;" data-block-id="3d888868178ebb4d545df97a511593f3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(229, 232, 220); text-align: left;">
+<ul>
+	<li style="color:rgb(255, 255, 255)">Browser Internals</li>
+	<li style="color:rgb(255, 255, 255)">JavaScript and the Browser
+	<ul>
+		<li>The Document Object Model</li>
+		<li>DOM Selectors</li>
+		<li>DOM Traversal</li>
+		<li>Creating DOM Nodes</li>
+		<li>Events</li>
+		<li>Animations</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-background-color="#005397" data-id="48713092bf19f0bccfc83d7ba03c651e" class="has-dark-background future" hidden="" aria-hidden="true" style="display: none;"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 311px; height: auto;" data-block-id="c8535e13062bfee72df7f5bf4ea23d7c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255); font-size: 80%;">
+<h1>Thank you!</h1>
+</div></div></section>
+				</div>
+			<div class="backgrounds"><div class="slide-background present" data-background-hash="0#3b465cnullnullnullnull" data-loaded="true" style="background-color: rgb(59, 70, 92); display: block;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#005397nullnullnullnull" data-loaded="true" style="background-color: rgb(0, 83, 151); display: block;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#167c80nullnullnullnull" data-loaded="true" style="background-color: rgb(22, 124, 128); display: block;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#674b7cnullnullnullnull" style="background-color: rgb(103, 75, 124); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#005397nullnullnullnull" style="background-color: rgb(0, 83, 151); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#005397nullnullnullnull" style="background-color: rgb(0, 83, 151); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#167c80nullnullnullnull" style="background-color: rgb(22, 124, 128); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#005397nullnullnullnull" style="background-color: rgb(0, 83, 151); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#167c80nullnullnullnull" style="background-color: rgb(22, 124, 128); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#005397nullnullnullnull" style="background-color: rgb(0, 83, 151); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#00b28bnullnullnullnull" style="background-color: rgb(0, 178, 139); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#167c80nullnullnullnull" style="background-color: rgb(22, 124, 128); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#005397nullnullnullnull" style="background-color: rgb(0, 83, 151); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#167c80nullnullnullnull" style="background-color: rgb(22, 124, 128); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#674b7cnullnullnullnull" style="background-color: rgb(103, 75, 124); display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="0#005397nullnullnullnull" style="background-color: rgb(0, 83, 151); display: none;"><div class="slide-background-content"></div></div></div><div class="slide-number" style="display: none;"></div><aside class="controls" data-controls-layout="bottom-right" data-controls-back-arrows="faded" style="display: block;"><button class="navigate-left" aria-label="previous slide" disabled="disabled"><div class="controls-arrow"></div></button>
+			<button class="navigate-right enabled highlight" aria-label="next slide"><div class="controls-arrow"></div></button>
+			<button class="navigate-up" aria-label="above slide" disabled="disabled"><div class="controls-arrow"></div></button>
+			<button class="navigate-down" aria-label="below slide" disabled="disabled"><div class="controls-arrow"></div></button></aside><div class="progress" style="display: block;"><span style="transform: scaleX(0);"></span></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"><button class="resume-button">Resume presentation</button></div><div class="aria-status" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">Before we begin... Open Zoom https://bit.ly/jsd-class-01 Videos On </div></div>
+		</div>
+	</div>
+
+	<div class="pill summary-pill" style="left: 169.5px;">
+		<div class="pill-picture" style="background-image: url(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg)"></div>
+		<div class="pill-content">
+			<h4 class="pill-title">MyStep Programme: JSD Class 01</h4>
+			<p class="pill-description">By Jack Jeffress</p>
+		</div>
+	</div>
+
+	<div class="pill instructions-pill" style="left: 265.5px;">
+		<div class="pill-picture"></div>
+		<div class="pill-content">
+			<h4 class="pill-title"></h4>
+			<p class="pill-description"></p>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="column">
+	<header class="deck-card ">
+		<div class="deck-card-header">
+				<div class="deck-state" data-tooltip="This deck is only visible to people it has been explicitly shared it with" data-tooltip-maxwidth="250">Private</div>
+
+			<div class="deck-options">
+				<a class="button white fullscreen-button" data-tooltip="Fullscreen" href="https://slides.com/jackjeffress/mystep-programme-jsd-class-01/fullscreen"><span class="icon i-fullscreen"></span></a>
+			</div>
+
+		</div>
+
+
+		<div class="clear"></div>
+
+		<div class="deck-card-body">
+			<div class="deck-info">
+				<h1 class="title">MyStep Programme: JSD Class 01</h1>
+				<ul class="deck-meta">
+					<li data-tooltip="Created date" data-tooltip-delay="500">
+						<span class="icon i-clock"></span>
+						<time class="value ago" datetime="2021-08-05 04:43:37 UTC">8 days ago</time>
+					</li>
+				</ul>
+			</div>
+
+			<div class="user-info">
+	<div class="picture" style="background-image: url(https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg)"></div>
+	<div class="text">
+		<h3 class="title">
+			<a href="https://slides.com/jackjeffress" class="username">Jack Jeffress</a>
+			<a href="https://slides.com/pricing#pro" class="pro-badge">PRO</a>
+		</h3>
+		<p class="description"></p>
+		<ul class="links">
+			
+			 <li><a href="https://twitter.com/threequal" target="_blank"><span class="icon i-twitter"></span>threequal</a></li> 
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+
+			<div class="clear"></div>
+		</div>
+	</header>
+
+
+
+</div>
+      </div>
+      <footer class="global-footer">
+    <div class="link-group">
+      <h5>Tour</h5>
+      <a href="https://slides.com/?root=true">Home</a>
+      <a href="https://slides.com/features?root=true">Features</a>
+      <a href="https://slides.com/pricing?root=true">Pricing</a>
+      <a href="https://slides.com/explore?root=true">Made with Slides</a>
+      <a href="https://slides.com/for-teams?root=true">Slides for Teams</a>
+      <a href="https://slides.com/for-developers?root=true">Slides for Developers</a>
+    </div>
+
+    <div class="link-group">
+      <h5>Help</h5>
+      <a href="https://help.slides.com/" target="_blank" rel="noopener">Forum</a>
+      <a href="https://help.slides.com/knowledgebase" target="_blank" rel="noopener">Knowledge Base</a>
+      <a href="https://slides.com/developers?root=true">Developers Docs</a>
+      <a href="https://help.slides.com/" data-feedback-mode="smartvote">Leave Feedback</a>
+      <a href="https://help.slides.com/" data-feedback-mode="contact">Report an Issue</a>
+    </div>
+
+    <div class="link-group">
+      <h5>Updates</h5>
+      <a href="https://slides.com/changelog?root=true">Changelog</a>
+      <a href="https://slides.com/news">News</a>
+      <a href="https://twitter.com/slides" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://facebook.com/slidesapp" target="_blank" rel="noopener">Facebook</a>
+    </div>
+
+    <div class="link-group">
+      <h5>Company</h5>
+      <a href="https://slides.com/about?root=true">About Slides</a>
+      <a href="https://slides.com/security?root=true">Security</a>
+      <a href="https://slides.com/partners?root=true">Partners</a>
+    </div>
+
+    <div class="legal">
+      <a href="https://slides.com/terms?root=true">Terms</a>
+      • <a href="https://slides.com/privacy?root=true">Privacy</a>
+      • <span class="copyright">© 2021&nbsp;Slides, Inc.</span>
+    </div>
+</footer>
+
+    </div> <!--! end of #container -->
+    
+<script>
+	var SLConfig = {"deck":{"id":2198190,"slug":"mystep-programme-jsd-class-01","title":"MyStep Programme: JSD Class 01","description":"","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/31bbc13bc2b8b18bfbd89b773224c088/thumb.jpg?1628572525","view_count":113,"user":{"id":165247,"username":"jackjeffress","name":"Jack Jeffress","description":"","thumbnail_url":"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg","account_type":"pro","team_id":null,"settings":{"id":979,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"fade","transition":"concave","theme_id":null,"theme_font":"montserrat","theme_color":"sand-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":54,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1628754936310,"font_typekit":"","font_google":"Roboto Slab, IBM Plex Mono","time_limit":null,"navigation_mode":"default","upsizing_enabled":true},"user":{"id":165247,"username":"jackjeffress","name":"Jack Jeffress","description":"","thumbnail_url":"https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg","account_type":"pro","team_id":null,"settings":{"id":979,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+</script>
+    <script src="./SLIDE_CLASS_01_files/application-50f52e96049a48fcc052db3ae8a5e93384d1f628102a6c8a1320107a920bd3cd.js.download" defer="defer"></script>
+    	<script src="./SLIDE_CLASS_01_files/deck-4785a8382a1a6751b6a9c136ca4e3ef1895c4a472a7f221220c4de421b0b9167.js.download" defer="defer"></script>
+	
+
+
+    <script>
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/f7sH7NavrjjvuGxByaw.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+UserVoice.push(['set', {
+  accent_color: '#448dd6',
+  trigger_color: 'white',
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)',
+  position: 'automatic'
+}]);
+
+</script>
+
+  
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
